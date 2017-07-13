@@ -1,0 +1,9 @@
+<h1>Questions and Answers Message Board</h1>
+
+<ol>
+  {{#each model as | message|}}
+    <li>
+      {{message.question}} <br> {{message.author}}
+    </li>
+  {{/each}}
+</ol>
