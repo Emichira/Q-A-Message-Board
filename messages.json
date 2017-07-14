@@ -1,0 +1,14 @@
+{ "messages": [{
+  "question": "Who is the latest Arsenal signing this summer?",
+  "author": "Anuelmich",
+  "info": "Hint: He played in Ligue1"
+},{
+  "question": "Who's Arsenal longest serving manager?",
+  "author": "Anuelmich",
+  "info": "Hint: The incredibles. Unbeaten"
+}, {
+  "question": "Who is the best player of the season 2016/2017 for Arsenal?",
+  "author": "Anuelmich",
+  "info": "Hint: Dogs"
+}]
+}
