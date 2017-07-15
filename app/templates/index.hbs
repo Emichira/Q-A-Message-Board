@@ -1,7 +1,8 @@
 <h1>Questions and Answers Message Board</h1>
 
 <ol>
-  {{#each model as | message|}}
+  {{#each model as |message|}}
+  {{message-tile message=message edit="update" destroyMessage="destroyMessage"}}
     <li>
       {{message.question}} <br> {{message.author}}
     </li>
