@@ -2,10 +2,11 @@ import Ember from 'ember';
 
 export default Ember.Component.extend({
   addNewMessage: false,
-  action: {
+  actions: {
     messageFormShow() {
       this.set('addNewMessage', true);
     },
+
     saveMessage1() {
       var params = {
         question: this.get('question'),
