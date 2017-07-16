@@ -1,7 +1,7 @@
 <li>
-  {{message.question}} {{message.author}}
+  {{message.question}} <br> {{message.author}} <br> {{message.info}}
 
- {{edit-message edit=message edit="update"}}
+ {{edit-message message=message update="update"}}
 
  <button {{action 'delete' message}}>Delete</button>
 </li>
