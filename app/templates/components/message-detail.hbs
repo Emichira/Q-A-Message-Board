@@ -1,6 +1,11 @@
 <ol>
   <li>{{message.question}} <br> {{message.author}} <br> {{message.info}}
     <br>
+    <div class="jumbotron">
+      {{new-answer saveAnswer="saveAnswer" answer=model}}
+    </div>
+
+    <br>
     <button {{action 'delete' message}}>Delete message</button>
 
   </li>

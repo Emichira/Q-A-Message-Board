@@ -21,12 +21,17 @@ export default Ember.Route.extend({
     },
     saveAnswer(params) {
       var newAnswer = this.store.createRecord('answer', params);
-      var answer = params.rental;
-      answer.get('answers').addObject(newAnswer);
+      var message = params.message;
+      message.get('answers').addObject(newAnswer);
       newAnswer.save().then(function() {
-        return answer.save();
+        return message.save();
       });
-      this.transitionTo('answer', answer);
-    }
+      this.transitionTo('message', message);
+    },
+    saveAnswer3(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      newAnswer.save();
+      this.transitionTo('index');
+    },
   }
 });
