@@ -1,5 +1,7 @@
 <h1>Questions and Answers Message Board</h1>
 
+<hr>
+
 <h3>Arsenal Trivia Question & Answers</h3>
 
 <ol>
@@ -9,15 +11,3 @@
 </ol>
 
 {{new-message saveMessage2="saveMessage3"}}
-
-<h2> Answers </h2>
-
-<ol>
-  {{#each model.answers as |answer|}}
-    <li>{{answer.jibu}} <br> {{answer.mtunzi}}</li>
-  {{/each}}
-</ol>
-
-{{new-answer saveAnswer="saveAnswer"}}
-
-<hr>

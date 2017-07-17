@@ -1,7 +1,3 @@
 <li>
-  {{message.question}} <br> {{message.author}}
-
- {{update-message message=message update="update"}}
-
- <button {{action 'delete' message}}>Delete</button>
+    {{#link-to 'message' message.id}}{{message.question}} <br> {{message.author}} {{/link-to}}
 </li>
