@@ -1,6 +1,8 @@
 <ol>
   <li>{{message.question}} <br> {{message.author}} <br> {{message.info}}
-
+<br>
+{{update-message message=model update="update" destroyMessage="destroyMessage"}}
+<br>
     <button {{action 'delete' message}}>Delete</button>
 
 </li>
