@@ -7,7 +7,7 @@ export default Ember.Component.extend({
       this.sendAction('update', message, params);
     },
     delete(message) {
-      if (confirm('Are you sure you want to delete this rental?')) {
+      if (confirm('Are you sure you want to delete this?')) {
         this.sendAction('destroyMessage', message);
       }
     }

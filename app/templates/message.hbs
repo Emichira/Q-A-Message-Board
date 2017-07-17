@@ -1,2 +1,5 @@
-<h2>More information about {{message.question}} <br> {{message.author}}</h2>
-{{}}
+<h2>More information about {{model.question}} <br> {{model.author}}:</h2>
+
+{{update-message message=model update="update"}}
+
+{{message-detail message=model destroyMessage="destroyMessage"}}
