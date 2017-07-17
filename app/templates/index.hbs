@@ -1,9 +1,23 @@
 <h1>Questions and Answers Message Board</h1>
 
+<h3>Arsenal Trivia Question & Answers</h3>
+
 <ol>
   {{#each model as |message|}}
-  {{message-tile message=message update="update" destroyMessage="destroyMessage"}}
+  {{message-tile message=message update="update"}}
   {{/each}}
 </ol>
 
 {{new-message saveMessage2="saveMessage3"}}
+
+<h2> Answers </h2>
+
+<ol>
+  {{#each model.answers as |answer|}}
+    <li>{{answer.jibu}} <br> {{answer.mtunzi}}</li>
+  {{/each}}
+</ol>
+
+{{new-answer saveAnswer="saveAnswer"}}
+
+<hr>

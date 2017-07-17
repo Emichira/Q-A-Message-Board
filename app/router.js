@@ -8,6 +8,7 @@ const Router = Ember.Router.extend({
 
 Router.map(function() {
   this.route('answer');
+  this.route('message');
 });
 
 export default Router;

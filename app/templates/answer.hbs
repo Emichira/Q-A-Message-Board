@@ -1,1 +1,11 @@
-{{outlet}}
+<h1>Questions and Answers Message Board</h1>
+
+<h3>Answers about Arsenal Quiz Questions</h3>
+
+<ol>
+  {{#each model as |message|}}
+  {{message-tile message=message update="update" destroyMessage="destroyMessage"}}
+  {{/each}}
+</ol>
+
+{{new-message saveMessage2="saveMessage3"}}
