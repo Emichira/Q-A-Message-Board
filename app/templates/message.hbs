@@ -1,11 +1,4 @@
-
 <div class="jumbotron">
   {{message-detail message=model destroyMessage="destroyMessage"}}
   {{update-message message=model update="update"}}
 </div>
-
-    <ul>
-      {{#each message.answers as |answer|}}
-        {{answer-tile answer=answer}}
-      {{/each}}
-    </ul>
