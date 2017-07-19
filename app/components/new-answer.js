@@ -10,7 +10,7 @@ export default Ember.Component.extend({
       var params = {
         jibu: this.get('jibu'),
         mtunzi: this.get('mtunzi'),
-        message: this.get('message')
+        message: this.get('message'),
       };
       this.set('addNewAnswer', false);
       this.sendAction('saveAnswer', params);

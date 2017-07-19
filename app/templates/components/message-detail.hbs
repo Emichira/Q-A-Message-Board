@@ -1,10 +1,13 @@
 <ol>
   <li>{{message.question}} <br> {{message.author}} <br> {{message.info}}
-    <br>
-    <button {{action 'delete' message}}>Delete message</button>
-    <br><br>
-    {{new-answer saveAnswer="saveAnswer" answer=model}}
-
-
   </li>
 </ol>
+<br><br>
+<button {{action 'delete' message}}>Delete message</button>
+<br>
+<h3>All Answers</h3>
+<ul>
+  {{#each messages.answers as |answer|}}
+    {{answer-tile answer=answer destroyAnswer="destroyAnswer"}}
+  {{/each}}
+</ul>
