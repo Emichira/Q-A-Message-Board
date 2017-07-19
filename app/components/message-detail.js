@@ -7,14 +7,8 @@ export default Ember.Component.extend({
         this.sendAction('destroyMessage', message);
       }
     },
-    saveAnswer() {
-      var params = {
-        jibu: this.get('jibu'),
-        mtunzi: this.get('mtunzi'),
-        message: this.get('message')
-      };
-      this.set('addNewAnswer', false);
-      this.sendAction('saveAnswer', params);
+    destroyAnswer(answer) {
+      this.sendAction('destroyAnswer', answer);
     }
   }
 });
