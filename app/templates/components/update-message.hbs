@@ -6,6 +6,14 @@
       <label for="question">Question</label>
       {{input value=question id="question" placeholder=message.question}}
     </div>
+    <div class="form-group">
+      <label for="author">Author</label>
+      {{input value=author id="author" placeholder=message.author}}
+    </div>
+    <div class="form-group">
+      <label for="info">Additional Info</label>
+      {{input value=info id="info" placeholder=message.info}}
+    </div>
 
     <button {{action 'update' message}}>Save</button>
   </form>
