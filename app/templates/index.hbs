@@ -6,14 +6,8 @@
 
 <ol>
   {{#each model as |message|}}
-  {{message-tile message=message}} {{message-popularity message}}
+  {{message-tile message=message}} {{message-popularity message}} {{message.answer.lenght}}
   {{/each}}
 </ol>
-
-<ul>
-  {{#each message.answers as |answer|}}
-    {{answer-tile answer=answer}}
-  {{/each}}
-</ul>
 
 {{new-message saveMessage2="saveMessage3"}}
