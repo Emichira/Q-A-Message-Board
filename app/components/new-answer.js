@@ -9,7 +9,6 @@ export default Ember.Component.extend({
     saveAnswer() {
       var params = {
         jibu: this.get('jibu'),
-        author: this.get('author'),
         mtunzi: this.get('mtunzi'),
         message: this.get('message'),
       };
