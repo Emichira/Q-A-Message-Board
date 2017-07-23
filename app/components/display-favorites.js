@@ -1,5 +1,5 @@
 import Ember from 'ember';
 
 export default Ember.Component.extend({
-  favoriteMessages: Ember.inject.service(),
+  favoriteQuestions: Ember.inject.service(),
 });
