@@ -1,4 +1,6 @@
 <h2>Favorite Questions</h2>
+<ol>
 {{#each favoriteQuestions.messages as |message|}}
-    {{#link-to 'message' message.id}} {{message.question}} {{message.author}}{{/link-to}}
+    <li>{{#link-to 'message' message.id}} {{message.question}} <br> {{message.author}}{{/link-to}}</li>
 {{/each}}
+</ol>
