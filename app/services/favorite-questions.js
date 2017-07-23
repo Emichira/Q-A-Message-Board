@@ -3,7 +3,7 @@ import Ember from 'ember';
 export default Ember.Service.extend({
   messages: [],
 
-  add(question) {
+  add(message) {
     this.get('messages').pushObject(message);
   }
 });
