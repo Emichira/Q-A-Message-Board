@@ -6,7 +6,7 @@
 
 <ol>
   {{#each model as |message|}}
-  {{message-tile message=message}} {{message-popularity message}}
+  {{message-tile message=message}} {{message-popularity message}} {{display-favorites}}
   {{/each}}
 </ol>
 
