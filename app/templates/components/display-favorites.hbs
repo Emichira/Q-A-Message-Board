@@ -1,1 +1,4 @@
-{{yield}}
+<h2>Favorite Questions</h2>
+{{#each favoriteMessages.messages as |message|}}
+    {{#link-to 'message' message.id}} {{message.question}} {{message.author}}{{/link-to}}
+{{/each}}

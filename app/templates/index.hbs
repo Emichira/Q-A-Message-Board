@@ -6,8 +6,10 @@
 
 <ol>
   {{#each model as |message|}}
-  {{message-tile message=message}} {{message-popularity message}} {{display-favorites}}
+  {{message-tile message=message}} {{message-popularity message}}
   {{/each}}
 </ol>
 
 {{new-message saveMessage2="saveMessage3"}}
+
+{{display-favorites}}
